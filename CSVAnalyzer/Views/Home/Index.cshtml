@@ -1,0 +1,28 @@
+﻿@model ICollection<CSVFile>
+
+@{
+    ViewBag.Title = "CSV File List";
+}
+@{
+    if (Model != null && Model.Count > 0)
+    {
+        <div class="card-deck">
+            @foreach (var csvFile in Model)
+            {
+                <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+                    <div class="card-header">
+                        <h6>@csvFile.FileName</h6>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-controller="home" asp-action="details" asp-route-id="@csvFile.Id" class="btn btn-primary m-1">Details</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <h2>No Csv file uploaded yet! Please upload CSV to see details!</h2>
+        <a asp-controller="home" asp-action="upload" class="btn btn-primary m-1">Upload CSV</a>
+    }
+}

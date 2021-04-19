@@ -1,0 +1,38 @@
+﻿@model CsvFileDetailsVM
+@{
+    ViewBag.Title = "Details of Uploaded CSV File";
+}
+
+<div class="jumbotron">
+    <h3>Most Sold Vehicle: @Model.MostSoldVehicle</h3>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">DealNumber</th>
+                <th scope="col">CustomerName</th>
+                <th scope="col">DealershipName</th>
+                <th scope="col">Vehicle</th>
+                <th scope="col">Price</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var dealerTrack in Model.DealerTrackList)
+            {
+                var price = "CAD$" + dealerTrack.Price.Replace('"', ' ').Trim();
+                <tr>
+                    <td>@dealerTrack.DealNumber</td>
+                    <td>@dealerTrack.CustomerName</td>
+                    <td>@dealerTrack.DealershipName</td>
+                    <td>@dealerTrack.Vehicle</td>
+                    <td>@price</td>
+                    <td>@dealerTrack.Date</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
