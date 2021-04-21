@@ -1,8 +1,0 @@
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\bin\Debug\netstandard2.0\CSVAnalyzer.Models.deps.json
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\bin\Debug\netstandard2.0\CSVAnalyzer.Models.dll
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\bin\Debug\netstandard2.0\CSVAnalyzer.Models.pdb
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\obj\Debug\netstandard2.0\CSVAnalyzer.Models.AssemblyInfoInputs.cache
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\obj\Debug\netstandard2.0\CSVAnalyzer.Models.AssemblyInfo.cs
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\obj\Debug\netstandard2.0\CSVAnalyzer.Models.csproj.CoreCompileInputs.cache
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\obj\Debug\netstandard2.0\CSVAnalyzer.Models.dll
-C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalyzer.Models\obj\Debug\netstandard2.0\CSVAnalyzer.Models.pdb
