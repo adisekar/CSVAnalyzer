@@ -1,6 +1,6 @@
 # CSVAnalyzer
 
-Upload and View the CSV file data and see analytics of most sold vehicle
+Asp.Net Core MVC WebApp to upload and view the CSV file data on the app and, analytics of most sold vehicle
 
 Description: As a user, I want to be able to upload a CSV file containing vehicle sales data and visualize the data in a web browser. In addition, I would like to display the vehicle that was sold the most often.
 
