@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSVAnalyzer.ViewModels
 {
-    public class CSVUploadVM
+    public class FileUploadVM
     {
         public IFormFile CsvFile { get; set; }
     }

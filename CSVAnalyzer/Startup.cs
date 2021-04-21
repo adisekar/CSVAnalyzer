@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CSVAnalyzer.BLL.Managers;
-using CSVAnalyzer.DAL;
+using CSVAnalyzer.DAL.Repository;
 
 namespace CSVAnalyzer
 {
@@ -27,8 +27,12 @@ namespace CSVAnalyzer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().AddXmlSerializerFormatters();
-            services.AddSingleton<ICsvService, MockCSVService>();
-            services.AddSingleton<ICsvRepository, MockCSVRepository>();
+            services.AddSingleton<IFileService, MockCSVService>();
+            services.AddSingleton<IFileRepository, MockCSVRepository>();
+            services.AddSingleton<IFile, CSVFile>();
+            services.AddSingleton<IVehicleSale, VehicleSale>();
+            services.AddSingleton<IVehicleSaleService, MockVehicleSaleService>();
+            services.AddSingleton<IVehicleSaleRepository, MockVehicleSaleRepository>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CSVAnalyzer.Models
 {
-    public class CSVFile
+    public class CSVFile : IFile
     {
         public int Id { get; set; }
         public string FilePath { get; set; }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CSVAnalyzer.Models
 {
-    public class DealerTrack
+    public class VehicleSale : IVehicleSale
     {
         public int DealNumber { get; set; }
         public string CustomerName { get; set; }

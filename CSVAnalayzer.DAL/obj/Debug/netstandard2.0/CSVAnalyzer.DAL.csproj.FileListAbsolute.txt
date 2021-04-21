@@ -1,0 +1,12 @@
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\bin\Debug\netstandard2.0\CSVAnalyzer.DAL.deps.json
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\bin\Debug\netstandard2.0\CSVAnalyzer.DAL.dll
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\bin\Debug\netstandard2.0\CSVAnalyzer.DAL.pdb
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\bin\Debug\netstandard2.0\CSVAnalyzer.Models.dll
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\bin\Debug\netstandard2.0\CSVAnalyzer.Models.pdb
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.csprojAssemblyReference.cache
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.AssemblyInfoInputs.cache
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.AssemblyInfo.cs
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.csproj.CopyComplete
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.dll
+C:\Users\AdiSekar\source\repos\CSVAnalyzer\CSVAnalayzer.DAL\obj\Debug\netstandard2.0\CSVAnalyzer.DAL.pdb

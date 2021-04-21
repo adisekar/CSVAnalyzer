@@ -97,7 +97,7 @@ using CSVAnalyzer.ViewModels;
             WriteLiteral("</h6>\r\n                    </div>\r\n                    <div class=\"card-footer text-center\">\r\n                        ");
             EndContext();
             BeginContext(516, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e15b9f77fea74073813013a96488ce89", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eea9737ff5e94262b2fe33b87f060f24", async() => {
                 BeginContext(617, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -153,7 +153,7 @@ using CSVAnalyzer.ViewModels;
             WriteLiteral("        <h2>No Csv file uploaded yet! Please upload CSV to see details!</h2>\r\n        ");
             EndContext();
             BeginContext(823, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71a0ed7aa74b4a2dad78e0b21e5eae4a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "216836442db54ab2a04720e610e3cb8f", async() => {
                 BeginContext(896, 10, true);
                 WriteLiteral("Upload CSV");
                 EndContext();

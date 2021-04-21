@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSVAnalyzer.BLL
+namespace CSVAnalyzer.Models
 {
     public class Parser
     {

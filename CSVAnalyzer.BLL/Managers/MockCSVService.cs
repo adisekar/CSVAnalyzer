@@ -2,32 +2,32 @@
 using System.Collections.Generic;
 using System.Text;
 using CSVAnalyzer.Models;
-using CSVAnalyzer.DAL;
+using CSVAnalyzer.DAL.Repository;
 
 namespace CSVAnalyzer.BLL.Managers
 {
-    public class MockCSVService : ICsvService
+    public class MockCSVService : IFileService
     {
-        private ICsvRepository _csvRepository;
+        private IFileRepository _csvRepository;
 
-        public MockCSVService(ICsvRepository csvRepository)
+        public MockCSVService(IFileRepository csvRepository)
         {
             _csvRepository = csvRepository;
         }
-        public CSVFile Add(CSVFile csvFile)
+        public IFile Add(IFile csvFile)
         {
             _csvRepository.Add(csvFile);
             return csvFile;
         }
 
-        public ICollection<CSVFile> GetAllCsvFiles()
+        public ICollection<IFile> GetAllFiles()
         {
-            return _csvRepository.GetAllCsvFiles();
+            return _csvRepository.GetAllFiles();
         }
 
-        public CSVFile GetCsvFile(int id)
+        public IFile GetFile(int id)
         {
-            return _csvRepository.GetCsvFile(id);
+            return _csvRepository.GetFile(id);
         }
     }
 }

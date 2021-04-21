@@ -4,30 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CSVAnalyzer.DAL
+namespace CSVAnalyzer.DAL.Repository
 {
-    public class MockCSVRepository : ICsvRepository
+    public class MockCSVRepository : IFileRepository
     {
-        private List<CSVFile> _csvList;
+        private List<IFile> _csvList;
 
         public MockCSVRepository()
         {
-            _csvList = new List<CSVFile>();
+            _csvList = new List<IFile>();
         }
 
-        public CSVFile Add(CSVFile csvFile)
+        public IFile Add(IFile csvFile)
         {
             csvFile.Id = _csvList.Count == 0 ? 1 : _csvList.Max(e => e.Id) + 1;
             _csvList.Add(csvFile);
             return csvFile;
         }
 
-        public ICollection<CSVFile> GetAllCsvFiles()
+        public ICollection<IFile> GetAllFiles()
         {
             return _csvList;
         }
 
-        public CSVFile GetCsvFile(int id)
+        public IFile GetFile(int id)
         {
             return _csvList.FirstOrDefault(file => file.Id == id);
         }

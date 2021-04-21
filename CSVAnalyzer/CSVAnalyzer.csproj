@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CSVAnalayzer.DAL\CSVAnalayzer.DAL.csproj" />
+    <ProjectReference Include="..\CSVAnalayzer.DAL\CSVAnalyzer.DAL.csproj" />
     <ProjectReference Include="..\CSVAnalyzer.BLL\CSVAnalyzer.BLL.csproj" />
   </ItemGroup>
 

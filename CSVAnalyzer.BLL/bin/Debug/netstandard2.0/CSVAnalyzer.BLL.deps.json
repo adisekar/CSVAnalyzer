@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "CSVAnalyzer.BLL/1.0.0": {
         "dependencies": {
-          "CSVAnalayzer.DAL": "1.0.0",
+          "CSVAnalyzer.DAL": "1.0.0",
           "CSVAnalyzer.Models": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
@@ -23,12 +23,12 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "CSVAnalayzer.DAL/1.0.0": {
+      "CSVAnalyzer.DAL/1.0.0": {
         "dependencies": {
           "CSVAnalyzer.Models": "1.0.0"
         },
         "runtime": {
-          "CSVAnalayzer.DAL.dll": {}
+          "CSVAnalyzer.DAL.dll": {}
         }
       },
       "CSVAnalyzer.Models/1.0.0": {
@@ -58,7 +58,7 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "CSVAnalayzer.DAL/1.0.0": {
+    "CSVAnalyzer.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

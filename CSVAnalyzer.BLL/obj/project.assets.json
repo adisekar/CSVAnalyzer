@@ -26,17 +26,17 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "CSVAnalayzer.DAL/1.0.0": {
+      "CSVAnalyzer.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CSVAnalyzer.Models": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/CSVAnalayzer.DAL.dll": {}
+          "bin/placeholder/CSVAnalyzer.DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CSVAnalayzer.DAL.dll": {}
+          "bin/placeholder/CSVAnalyzer.DAL.dll": {}
         }
       },
       "CSVAnalyzer.Models/1.0.0": {
@@ -195,10 +195,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "CSVAnalayzer.DAL/1.0.0": {
+    "CSVAnalyzer.DAL/1.0.0": {
       "type": "project",
-      "path": "../CSVAnalayzer.DAL/CSVAnalayzer.DAL.csproj",
-      "msbuildProject": "../CSVAnalayzer.DAL/CSVAnalayzer.DAL.csproj"
+      "path": "../CSVAnalayzer.DAL/CSVAnalyzer.DAL.csproj",
+      "msbuildProject": "../CSVAnalayzer.DAL/CSVAnalyzer.DAL.csproj"
     },
     "CSVAnalyzer.Models/1.0.0": {
       "type": "project",
@@ -208,7 +208,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "CSVAnalayzer.DAL >= 1.0.0",
+      "CSVAnalyzer.DAL >= 1.0.0",
       "CSVAnalyzer.Models >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -246,8 +246,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalayzer.DAL.csproj": {
-              "projectPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalayzer.DAL.csproj"
+            "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalyzer.DAL.csproj": {
+              "projectPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalyzer.DAL.csproj"
             },
             "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalyzer.Models\\CSVAnalyzer.Models.csproj": {
               "projectPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalyzer.Models\\CSVAnalyzer.Models.csproj"
@@ -281,7 +281,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

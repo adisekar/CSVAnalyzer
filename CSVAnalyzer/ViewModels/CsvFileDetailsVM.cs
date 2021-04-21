@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace CSVAnalyzer.ViewModels
 {
-    public class CsvFileDetailsVM
+    public class FileDetailsVM
     {
-        public IEnumerable<DealerTrack> DealerTrackList { get; set; }
+        public IEnumerable<IVehicleSale> VehicleSales { get; set; }
 
         public string MostSoldVehicle { get; set; }
     }

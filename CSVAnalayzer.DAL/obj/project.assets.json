@@ -202,9 +202,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalayzer.DAL.csproj",
-      "projectName": "CSVAnalayzer.DAL",
-      "projectPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalayzer.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalyzer.DAL.csproj",
+      "projectName": "CSVAnalyzer.DAL",
+      "projectPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\CSVAnalyzer.DAL.csproj",
       "packagesPath": "C:\\Users\\AdiSekar\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\AdiSekar\\source\\repos\\CSVAnalyzer\\CSVAnalayzer.DAL\\obj\\",
       "projectStyle": "PackageReference",
@@ -259,7 +259,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

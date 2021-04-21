@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVAnalyzer", "CSVAnalyzer\CSVAnalyzer.csproj", "{BCC4242A-B9B9-4A56-A40D-FE3B522FCC88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVAnalyzer.BLL", "CSVAnalyzer.BLL\CSVAnalyzer.BLL.csproj", "{25AA7671-730B-4271-A585-93AB3B07FB09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVAnalyzer.BLL", "CSVAnalyzer.BLL\CSVAnalyzer.BLL.csproj", "{25AA7671-730B-4271-A585-93AB3B07FB09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVAnalayzer.DAL", "CSVAnalayzer.DAL\CSVAnalayzer.DAL.csproj", "{E3322034-EEB1-4408-BDAD-9D6D41867F7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVAnalyzer.DAL", "CSVAnalayzer.DAL\CSVAnalyzer.DAL.csproj", "{E3322034-EEB1-4408-BDAD-9D6D41867F7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVAnalyzer.Models", "CSVAnalyzer.Models\CSVAnalyzer.Models.csproj", "{1B712313-EC91-427A-9736-842A79465A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVAnalyzer.Models", "CSVAnalyzer.Models\CSVAnalyzer.Models.csproj", "{1B712313-EC91-427A-9736-842A79465A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

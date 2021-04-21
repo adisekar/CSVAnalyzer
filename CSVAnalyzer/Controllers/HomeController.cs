@@ -15,17 +15,19 @@ namespace CSVAnalyzer.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ICsvService _csvService;
+        private readonly IFileService _fileService;
+        private readonly IVehicleSaleService _vehicleSalesService;
         private readonly IHostingEnvironment _hostingEnvironment;
 
-        public HomeController(ICsvService csvService, IHostingEnvironment hostingEnvironment)
+        public HomeController(IFileService csvService, IVehicleSaleService vehicleSaleService, IHostingEnvironment hostingEnvironment)
         {
-            _csvService = csvService;
+            _fileService = csvService;
+            _vehicleSalesService = vehicleSaleService;
             _hostingEnvironment = hostingEnvironment;
         }
         public IActionResult Index()
         {
-            ICollection<CSVFile> csvFiles = _csvService.GetAllCsvFiles();
+            ICollection<IFile> csvFiles = _fileService.GetAllFiles();
             return View(csvFiles);
         }
 
@@ -38,7 +40,7 @@ namespace CSVAnalyzer.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Upload(CSVUploadVM model)
+        public async Task<IActionResult> Upload(FileUploadVM model)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +62,7 @@ namespace CSVAnalyzer.Controllers
                     FilePath = filePath,
                     FileName = fileName
                 };
-                _csvService.Add(csvFile);
+                _fileService.Add(csvFile);
                 return RedirectToAction("details", new { Id = csvFile.Id });
             }
             return View();
@@ -69,19 +71,17 @@ namespace CSVAnalyzer.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
-            CSVFile csvFile = _csvService.GetCsvFile(id);
+            IFile file = _fileService.GetFile(id);
+            ICollection<IVehicleSale> list = await _vehicleSalesService.GetAllSales(file);
+            string mostSoldVehicle = _vehicleSalesService.GetMostSoldVehicle(list);
             try
             {
-                List<DealerTrack> list = new List<DealerTrack>();
-                Dictionary<string, int> frequencyMap = new Dictionary<string, int>();
-
-                await ReadCSVStream.ReadCSVAndPopulateListAndFrequency(csvFile, list, frequencyMap);
-                CsvFileDetailsVM csvFileDetailsVM = new CsvFileDetailsVM()
+                FileDetailsVM fileDetailsVM = new FileDetailsVM()
                 {
-                    DealerTrackList = list,
-                    MostSoldVehicle = frequencyMap.OrderByDescending(kv => kv.Value).FirstOrDefault().Key
+                    VehicleSales = list,
+                    MostSoldVehicle = mostSoldVehicle
                 };
-                return View(csvFileDetailsVM);
+                return View(fileDetailsVM);
             }
             catch (Exception e)
             {

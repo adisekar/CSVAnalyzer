@@ -1,4 +1,4 @@
-﻿@model CsvFileDetailsVM
+﻿@model FileDetailsVM
 @{
     ViewBag.Title = "Details of Uploaded CSV File";
 }
@@ -21,16 +21,16 @@
         </thead>
         <tbody>
 
-            @foreach (var dealerTrack in Model.DealerTrackList)
+            @foreach (var vehicleSale in Model.VehicleSales)
             {
-                var price = "CAD$" + dealerTrack.Price.Replace('"', ' ').Trim();
+                var price = "CAD$" + vehicleSale.Price.Replace('"', ' ').Trim();
                 <tr>
-                    <td>@dealerTrack.DealNumber</td>
-                    <td>@dealerTrack.CustomerName</td>
-                    <td>@dealerTrack.DealershipName</td>
-                    <td>@dealerTrack.Vehicle</td>
+                    <td>@vehicleSale.DealNumber</td>
+                    <td>@vehicleSale.CustomerName</td>
+                    <td>@vehicleSale.DealershipName</td>
+                    <td>@vehicleSale.Vehicle</td>
                     <td>@price</td>
-                    <td>@dealerTrack.Date</td>
+                    <td>@vehicleSale.Date</td>
                 </tr>
             }
         </tbody>

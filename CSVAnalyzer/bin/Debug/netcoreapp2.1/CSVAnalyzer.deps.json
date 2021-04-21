@@ -24,8 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "CSVAnalyzer/1.0.0": {
         "dependencies": {
-          "CSVAnalayzer.DAL": "1.0.0",
           "CSVAnalyzer.BLL": "1.0.0",
+          "CSVAnalyzer.DAL": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0"
@@ -38,20 +38,9 @@
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
-      "CSVAnalayzer.DAL/1.0.0": {
-        "dependencies": {
-          "CSVAnalyzer.Models": "1.0.0"
-        },
-        "runtime": {
-          "CSVAnalayzer.DAL.dll": {}
-        },
-        "compile": {
-          "CSVAnalayzer.DAL.dll": {}
-        }
-      },
       "CSVAnalyzer.BLL/1.0.0": {
         "dependencies": {
-          "CSVAnalayzer.DAL": "1.0.0",
+          "CSVAnalyzer.DAL": "1.0.0",
           "CSVAnalyzer.Models": "1.0.0"
         },
         "runtime": {
@@ -59,6 +48,17 @@
         },
         "compile": {
           "CSVAnalyzer.BLL.dll": {}
+        }
+      },
+      "CSVAnalyzer.DAL/1.0.0": {
+        "dependencies": {
+          "CSVAnalyzer.Models": "1.0.0"
+        },
+        "runtime": {
+          "CSVAnalyzer.DAL.dll": {}
+        },
+        "compile": {
+          "CSVAnalyzer.DAL.dll": {}
         }
       },
       "CSVAnalyzer.Models/1.0.0": {
@@ -3205,12 +3205,12 @@
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hashPath": "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512"
     },
-    "CSVAnalayzer.DAL/1.0.0": {
+    "CSVAnalyzer.BLL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CSVAnalyzer.BLL/1.0.0": {
+    "CSVAnalyzer.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
