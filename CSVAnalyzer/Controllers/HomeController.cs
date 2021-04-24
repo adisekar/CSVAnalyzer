@@ -72,6 +72,8 @@ namespace CSVAnalyzer.Controllers
         public async Task<IActionResult> Details(int id)
         {
             IFile file = _fileService.GetFile(id);
+            // Can do this in one step, while getting all sales, to also populate the most sold vehicle. 
+            // Just did it separately for clarity and keep these implementation separate. 
             ICollection<IVehicleSale> list = await _vehicleSalesService.GetAllSales(file);
             string mostSoldVehicle = _vehicleSalesService.GetMostSoldVehicle(list);
             try
